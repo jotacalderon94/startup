@@ -99,4 +99,4 @@ Handling the toggling of the checkboxes was particularly interesting.
 ```
 ## Testing
 
-I dont really now how notes work because I havent used them before. 
+I dont really now how notes work because I havent used them before.  but now that I read more I have learned that those are pretty much just notes and based on what is required I will use it as my kinda journal about this project and what I've learned in classes. Now I will comit this directly from the web vers. 
