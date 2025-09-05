@@ -97,3 +97,6 @@ Handling the toggling of the checkboxes was particularly interesting.
   ))}
 </div>
 ```
+## Testing
+
+I dont really now how notes work because I havent used them before. 
