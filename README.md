@@ -26,7 +26,7 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 ### Elevator pitch
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Do you ever wish staying on top of your daily habits—like studying, exercising, praying, or even just eating breakfast—felt a little more fun? The Virtual Pet Student Companion turns your daily activities into fuel for your pet’s growth. Each day you log tasks, your pet gains XP, levels up, and evolves. Neglect your habits, and your pet may get sick or lose health. It’s a gamified way to build consistency, stay motivated, and enjoy the journey of personal growth while caring for a companion.
 
 ### Design
 
@@ -43,20 +43,34 @@ sequenceDiagram
 
 ### Key features
 
-- Describe your key feature
-- Describe your key feature
-- Describe your key feature
+- Secure login & registration.
+
+- Task checklist with 5 daily core tasks.
+
+- Pet that grows/evolves based on performance.
+
+- Health decreases if tasks are neglected.
+
+- Motivational quotes or fun facts from 3rd-party API.
+
+- Real-time updates of pet stats via WebSockets.
+
+- Persistent storage of user, pet, and task history.
 
 ### Technologies
 
 I am going to use the required technologies in the following ways.
 
-- **HTML** - Description here
-- **CSS** - Description here
-- **React** - Description here
-- **Service** - Description here
-- **DB/Login** - Description here
-- **WebSocket** - Description here
+- **HTML** - Basic structure for login, dashboard, and about pages.
+- **CSS** - Styling pet UI, progress bars, and responsive layout.
+- **React** - Components for login, task list, pet display, progress bars; React Router for navigation.
+- **Service** - Backend endpoints for:
+                    Register/login/logout
+                    Get/update pet stats
+                    Save daily tasks
+                    Get motivational quotes (3rd-party API) ?? *** verify if this or something else ***
+- **DB/Login** - Store users, hashed passwords, pets, and task completions. 
+- **WebSocket** - Broadcast pet status changes and leaderboard updates in real time.
 
 ## 🚀 AWS deliverable
 
