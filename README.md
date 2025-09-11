@@ -1,32 +1,12 @@
-# Your startup name here
-
-[My Notes](notes.md)
+# Pokemon Habit Companion
 
 A brief description of the application here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-
-> [!NOTE]
->  This is a template for your startup application. You must modify this `README.md` file for each phase of your development. You only need to fill in the section for each deliverable when that deliverable is submitted in Canvas. Without completing the section for a deliverable, the TA will not know what to look for when grading your submission. Feel free to add additional information to each deliverable description, but make sure you at least have the list of rubric items and a description of what you did for each item.
-
-> [!NOTE]
->  If you are not familiar with Markdown then you should review the [documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) before continuing.
-
 ## 🚀 Specification Deliverable
-
-> [!NOTE]
->  Fill in this sections as the submission artifact for this deliverable. You can refer to this [example](https://github.com/webprogramming260/startup-example/blob/main/README.md) for inspiration.
-
-For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
-
-- [ ] Proper use of Markdown
-- [ ] A concise and compelling elevator pitch
-- [ ] Description of key features
-- [ ] Description of how you will use each technology
-- [ ] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
 
 ### Elevator pitch
 
-Do you ever wish staying on top of your daily habits—like studying, exercising, praying, or even just eating breakfast—felt a little more fun? The Virtual Pet Student Companion turns your daily activities into fuel for your pet’s growth. Each day you log tasks, your pet gains XP, levels up, and evolves. Neglect your habits, and your pet may get sick or lose health. It’s a gamified way to build consistency, stay motivated, and enjoy the journey of personal growth while caring for a companion.
+Building good habits is hard—so let a Pokémon cheer you on. With Pokémon Habit Companion, your daily tasks (study, exercise, prayer, sleep, breakfast) level up your Pokémon. Complete tasks to gain XP and health, unlock evolutions, and keep your buddy happy. Skip days and your Pokémon gets sick. It’s a fun, game-like way to build consistency—powered by live updates and real Pokémon data from PokeAPI.
 
 ### Design
 
@@ -47,7 +27,7 @@ sequenceDiagram
 
 - Task checklist with 5 daily core tasks.
 
-- Pet that grows/evolves based on performance.
+- Pokemon that grows/evolves based on performance.
 
 - Health decreases if tasks are neglected.
 
@@ -55,7 +35,9 @@ sequenceDiagram
 
 - Real-time updates of pet stats via WebSockets.
 
-- Persistent storage of user, pet, and task history.
+- Persistent storage of user, pokemon-pet, and task history.
+
+- Pokémon data (sprite, flavor text) from PokeAPI.
 
 ### Technologies
 
@@ -69,14 +51,14 @@ I am going to use the required technologies in the following ways.
                     Get/update pet stats
                     Save daily tasks
                     Get motivational quotes (3rd-party API) ?? *** verify if this or something else ***
-- **DB/Login** - Store users, hashed passwords, pets, and task completions. 
-- **WebSocket** - Broadcast pet status changes and leaderboard updates in real time.
+- **DB/Login** - Store users, hashed passwords, pokemons, and task completions. 
+- **WebSocket** - Broadcast Pokemon status changes and leaderboard updates in real time.
 
 ## 🚀 AWS deliverable
 
-For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
+I will fulfill this part later when we have advance in the project.
 
-- [ ] **Server deployed and accessible with custom domain name** - [My server link](https://yourdomainnamehere.click).
+## ALL THE UPCOMING PART WILL BE FILLED ONCE THE PROJECT ADVANCE
 
 ## 🚀 HTML deliverable
 
@@ -147,6 +129,4 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 - [ ] **WebSocket data displayed** - I did not complete this part of the deliverable.
 - [ ] **Application is fully functional** - I did not complete this part of the deliverable.
 
-## fulfilling the assignment haha
 
-I am just adding some stuff to commit it and then fulfill the assignment 
