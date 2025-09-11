@@ -1,6 +1,10 @@
 # Pokemon Habit Companion
 
-A brief description of the application here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The Pokémon Habit Companion is a gamified web application designed to help students and everyday users build consistent daily habits. Instead of checking off a boring to-do list, your progress fuels a partner Pokémon that gains XP, evolves, and stays healthy based on your real-world performance.
+
+By completing simple daily tasks like studying, exercising, praying, eating breakfast, and getting enough sleep, users increase their Pokémon’s level and health. Skipping tasks lowers health and may make the Pokémon “sick.” This makes habit-tracking feel like a game, keeping users motivated with a clear, fun feedback loop.
+
+The app uses React (Vite) for the frontend, an Express/Node.js service for backend logic, SQLite for persistent data storage, WebSockets (Socket.IO) for real-time updates, and PokeAPI to fetch authentic Pokémon sprites and data. Optional integration with ZenQuotes API provides daily motivational messages alongside your pet’s progress.
 
 ## 🚀 Specification Deliverable
 
@@ -14,11 +18,12 @@ Building good habits is hard—so let a Pokémon cheer you on. With Pokémon Hab
 ### Login Page
 ![Login Page Sketch](docs/loginSketch.png)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The login page will have an option for register and sign in, I haven't decided yet how will I deal with users, but probable I will use OAuth. That is why in the design you can see some sign in options logos.
 
 ### Dashboard Page
 ![Dashboard Page Sketch](docs/MainSketch.png)
 
+The main page will have the pokemon in the middle and different features, those in the image are just to illustrate and to separate spaces, but it might change within the features and the final design. 
 
 ### Key features
 
@@ -49,7 +54,7 @@ I am going to use the required technologies in the following ways.
                     Register/login/logout
                     Get/update pet stats
                     Save daily tasks
-                    Get motivational quotes (3rd-party API) ?? *** verify if this or something else ***
+                    Get motivational quotes (3rd-party API) 
 - **DB/Login** - Store users, hashed passwords, pokemons, and task completions. 
 - **WebSocket** - Broadcast Pokemon status changes and leaderboard updates in real time.
 
