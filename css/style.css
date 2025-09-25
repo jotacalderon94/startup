@@ -31,7 +31,11 @@ footer {
   text-align: center;
   padding: 1rem;
 }
-
+.userWelcome {
+  text-align: center;
+  font-size: 1.2em;
+  color: #156ece;
+}
 .team-member {
 max-width: 200px;
 height: auto;
@@ -43,4 +47,16 @@ margin: 0 auto;
   margin-top: 20px;
   text-align: center;
 
+}
+#realtime {
+  margin-top: 20px;
+  text-align: center;
+}
+.status {
+  color: green;
+  font-weight: bold;
+}
+.status2 {
+  color: red;
+  font-weight: bold;
 }
