@@ -38,3 +38,9 @@ height: auto;
 display: block;
 margin: 0 auto;
 }
+
+#third-party {
+  margin-top: 20px;
+  text-align: center;
+
+}
