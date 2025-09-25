@@ -26,6 +26,10 @@ No problems worked just like it said in the [instruction](https://github.com/web
 
 I just create an easy structure to follow later, I added some place holders for the upcoming stuff as required. 
 
+I added some text in the about me page, with my info and repo so the TA can review it.
+
+I will also add the 3rd party place holder
+
 ## CSS
 
 I haven't add yet any style but I don't think this will be a huge problem. I worked with the required framework, and it was good, also I liked that there is a big library with resources, that was easy to use. 
