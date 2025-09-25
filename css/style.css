@@ -24,12 +24,22 @@ section {
   padding: 1rem;
   border-bottom: 1px solid #ddd;
 }
-
+#pokemon-partner {
+  display: flex;  
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 150px;
+  height: auto;
+}
 footer {
   background: #333;
   color: white;
   text-align: center;
   padding: 1rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .userWelcome {
   text-align: center;
@@ -59,4 +69,11 @@ margin: 0 auto;
 .status2 {
   color: red;
   font-weight: bold;
+}
+button {
+  background-color: #156ece;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
