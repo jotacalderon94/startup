@@ -25,6 +25,16 @@ The login page will have an option for register and sign in, I haven't decided y
 
 The main page will have the pokemon in the middle and different features, those in the image are just to illustrate and to separate spaces, but it might change within the features and the final design. 
 
+### HTML Structure
+
+- For now I have a main Dashboard with a nav bar on top with the different index, this is mostly for the startup activity and it will change within the future assignments. 
+
+- The Task page will deal with the DB which will have a set of hardcoded tasks and an option to add tasks. Those will be linked with the users. You only will be able to add and check current tasks you are working on, I might add the old tasks options to so the user can go back in data.
+
+- The Websocket part will be under Friends, you will be able to comment others strikes and check how your friends are doing with their tasks, as well as if their parterners have evolved. 
+
+
+
 ### Key features
 
 - Secure login & registration.

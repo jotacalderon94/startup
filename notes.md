@@ -6,6 +6,10 @@
 
 These last couples days I have learn more about aws and using ec2 instances. I was not sure about cloning the simon repo and making it work within my own link but now I was able to make it work. I am still confuse on where should I put the simon repo if in my startup repo or just in a local one. Maybe asking for clarification on those instructions would have been a good thing haha. 
 
+9/25
+
+I changed some stuff to make it more clear about the DB and the websocket purpose I am unsure about editing the readme file, so I will ask the TA if we can change the format or if we need to keep it.
+
 
 
 ## Helpful links
