@@ -94,12 +94,12 @@ Besides the checklist under this text, I am still deciding about the colors I wi
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [x] **Header, footer, and main content body** - I did not complete this part of the deliverable.
-- [ ] **Navigation elements** - I did not complete this part of the deliverable.
-- [ ] **Responsive to window resizing** - I did not complete this part of the deliverable.
-- [ ] **Application elements** - I did not complete this part of the deliverable.
-- [ ] **Application text content** - I did not complete this part of the deliverable.
-- [x] **Application images** - I did not complete this part of the deliverable.
+- [x] **Header, footer, and main content body** - This is done however I would like to fix the color I will use for this..
+- [x] **Navigation elements** - Some of the navigation elements are not how I like them to be, but they are working for now.
+- [x] **Responsive to window resizing** - I check this with the inspect, resize for different screens and even used with my phone and it is working perfectly.
+- [x] **Application elements** - I changed buttons and forms inputs.
+- [x] **Application text content** - I reunified the text to use only one style. 
+- [x] **Application images** - I change the format for the image in the about page with my profile picture, and for the tasks page.
 
 ## 🚀 React part 1: Routing deliverable
 
