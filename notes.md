@@ -10,6 +10,9 @@ These last couples days I have learn more about aws and using ec2 instances. I w
 
 I changed some stuff to make it more clear about the DB and the websocket purpose I am unsure about editing the readme file, so I will ask the TA if we can change the format or if we need to keep it.
 
+10/1
+
+I worked on the CSS to fix the footer, I had worked before on the style part so now it is pretty much fixing and defining some colors. 
 
 
 ## Helpful links

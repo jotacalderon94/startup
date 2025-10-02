@@ -90,6 +90,8 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 ## 🚀 CSS deliverable
 
+Besides the checklist under this text, I am still deciding about the colors I will have for my webapp, but probably some variations of blue just following the Pokemon pattern. 
+
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
 - [x] **Header, footer, and main content body** - I did not complete this part of the deliverable.
