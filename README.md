@@ -101,6 +101,13 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 - [x] **Application text content** - I reunified the text to use only one style. 
 - [x] **Application images** - I change the format for the image in the about page with my profile picture, and for the tasks page.
 
+About the responsive here are some examples on how it is working now
+
+![Main Mobile Version](docs/For%20Documentation/home_cellphone.png)
+
+![About us Mobile Version](docs/For%20Documentation/about_cellphone.png)
+
+
 ## 🚀 React part 1: Routing deliverable
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
