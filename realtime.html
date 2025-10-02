@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HabbitBuddy App</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HabitBuddy App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
-<body>
-     <header>
-        <h1>Friends</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="data.html">Tasks</a>
-            <a href="realtime.html">Friends</a> 
-            <a href="auth.html"> Login / Register</a>
-        </nav>
-    </header>
 
-    <h1>Friends Strike</h1>
-    <div id ="friend list">
+<body>
+  <header>
+    <h1>Friends</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="data.html">Tasks</a>
+      <a href="realtime.html">Friends</a> 
+      <a href="auth.html">Login / Register</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section>
+      <h2>Friends Strike</h2>
+      <div id="friend-list">
         <ul>
-            <li>Matt M Has a strike of 5 days!!</li>
+          <li>Matt M has a strike of 5 days!!</li>
         </ul>
-    </div>
-    <div>
+      </div>
+
+      <div>
         <label for="comment">Comment:</label>
         <textarea id="comment" name="user_comment" rows="5" required></textarea>
-    </div>
-</body>
- <footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER INSIDE BODY -->
+  <footer>
     <p>&copy; 2025 HabitBuddy. All rights reserved.</p>
   </footer>
-
+</body>
 </html>
