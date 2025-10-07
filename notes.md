@@ -14,6 +14,10 @@ I changed some stuff to make it more clear about the DB and the websocket purpos
 
 I worked on the CSS to fix the footer, I had worked before on the style part so now it is pretty much fixing and defining some colors. 
 
+10/7
+
+I have been reviewing some react stuff as well as some JS, I think I will like to add some cheat sheet here with different languages to refer them in case I need it. I think I understand mostly everything however, there are times when I feel I don't remember everything so adding those here could be a good thing so if I need to double check any concept I can use this. 
+
 
 ## Helpful links
 
