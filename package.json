@@ -1,0 +1,35 @@
+{
+  "name": "startup",
+  "version": "1.0.0",
+  "description": "The Pokémon Habit Companion is a gamified web application designed to help students and everyday users build consistent daily habits. Instead of checking off a boring to-do list, your progress fuels a partner Pokémon that gains XP, evolves, and stays healthy based on your real-world performance.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jotacalderon94/startup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jotacalderon94/startup/issues"
+  },
+  "homepage": "https://github.com/jotacalderon94/startup#readme",
+  "devDependencies": {
+    "vite": "^7.1.9"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "react": "^19.2.0",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.4"
+  }
+}

@@ -18,6 +18,10 @@ I worked on the CSS to fix the footer, I had worked before on the style part so 
 
 I have been reviewing some react stuff as well as some JS, I think I will like to add some cheat sheet here with different languages to refer them in case I need it. I think I understand mostly everything however, there are times when I feel I don't remember everything so adding those here could be a good thing so if I need to double check any concept I can use this. 
 
+10/8
+
+In order to make the migration to react from an static page, I created 2 new branches one to keep the legacy version, and the other to do the migration, this is also to practice good practices on how it works on real environments. 
+
 
 ## Helpful links
 
