@@ -18,6 +18,9 @@ I worked on the CSS to fix the footer, I had worked before on the style part so 
 
 I have been reviewing some react stuff as well as some JS, I think I will like to add some cheat sheet here with different languages to refer them in case I need it. I think I understand mostly everything however, there are times when I feel I don't remember everything so adding those here could be a good thing so if I need to double check any concept I can use this. 
 
+I alwayts forget about the command to deploy the stuff so I will add it here. 
+
+Deployed the Simon app to production using ./deployFiles.sh -k /c/Users/jotac/Downloads/dev-server-key.pem -h habitbuddy.click -s simon. Learned that the script first clears the old deployment, then copies the current repo’s files to the server, ready for Caddy to serve
 
 ## Helpful links
 
