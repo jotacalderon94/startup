@@ -22,6 +22,9 @@ I have been reviewing some react stuff as well as some JS, I think I will like t
 
 In order to make the migration to react from an static page, I created 2 new branches one to keep the legacy version, and the other to do the migration, this is also to practice good practices on how it works on real environments. 
 
+to run deploy:
+./deployReact.sh -k /c/Users/jotac/Downloads/dev-server-key.pem -h habitbuddy.click -s startup
+
 
 ## Helpful links
 
