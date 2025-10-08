@@ -112,9 +112,11 @@ About the responsive here are some examples on how it is working now
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Bundled using Vite** - I did not complete this part of the deliverable.
-- [ ] **Components** - I did not complete this part of the deliverable.
-- [ ] **Router** - I did not complete this part of the deliverable.
+- [x] **Bundled using Vite** - I added vite by running npm init -y and then npm install vite@latest to add the latest version. I created a different branch to keep good practices
+- [x] **Components** - I migrated my previous pages to components now to use them with react. 
+- [x] **Router** - I did add routes within my app.jsx to navigate between the different pages( by using the components)
+
+Remember to add the import React on every other component other way it won't render those components. 
 
 ## 🚀 React part 2: Reactivity deliverable
 
