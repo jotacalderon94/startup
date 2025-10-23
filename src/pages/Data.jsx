@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function Home() {
+export default function TaskManager() {
   //  State for the task list
   const [tasks, setTasks] = useState([
     'Sleep 7 hours',
