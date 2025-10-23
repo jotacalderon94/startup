@@ -25,6 +25,15 @@ In order to make the migration to react from an static page, I created 2 new bra
 to run deploy:
 ./deployReact.sh -k /c/Users/jotac/Downloads/dev-server-key.pem -h habitbuddy.click -s startup
 
+**remember to run it on bash haha
+
+10/22 
+
+it has been some time, today while working on deploying simon first I got confused because I wasnt able to see all the buttons on the navbar, but then I double check the authentication part which makes possible the renderization of the other part. 
+
+the changes I need to do now are useState to storage the tasks users want to use
+useEffect to save changes on those tasks 
+maybe useContext to share data across components, but not sure yet how I will implement it.
 
 ## Helpful links
 

@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, {useState} from 'react'
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom'
 
 // Stub pages (you can fill them later)
@@ -13,6 +13,12 @@ import './styles/global.css'
 
 
 export default function App() {
+   const [tasks, setTasks] = useState([
+    'Sleep 7 hours',
+    'Exercise for 30 minutes',
+    'Read a book for 1 hour',
+  ]);
+
   return (
     <Router>
       <div className="app-container">
@@ -30,9 +36,9 @@ export default function App() {
 
         {/* Main routed content */}
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home tasks={tasks} />} />
           <Route path="/about" element={<About />} />
-          <Route path="/data" element={<Data />} />
+          <Route path="/data" element={<Data tasks={tasks} setTasks={setTasks} />} />
           <Route path="/realtime" element={<Realtime />} />
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<main><h2>404 – Page not found</h2></main>} />
