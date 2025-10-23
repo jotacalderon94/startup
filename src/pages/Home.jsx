@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Home() {
+export default function Home({tasks}) {
   const [pokemonName, setPokemonName] = useState('');
   const [pokemonData, setPokemonData] = useState(null);
   const [error, setError] = useState('');
@@ -65,14 +65,14 @@ export default function Home() {
           )}
         </div>
       </section>
-
-      {/* Database Data */}
-      <section id="db-data">
-        <h2>Tasks</h2>
+      <section>
+        <h2>Task Summary</h2>
         <ul>
-          <li>Task 1: Sleep 7 hours</li>
-          <li>Task 2: Exercise for 30 minutes</li>
-          <li>Task 3: Read a book for 1 hour</li>
+          {tasks.length > 0 ? (
+            tasks.map((t, i) => <li key={i}>{t}</li>)
+          ) : (
+            <p>No tasks yet. Add some in the Tasks page!</p>
+          )}
         </ul>
       </section>
 
