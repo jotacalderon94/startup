@@ -128,11 +128,14 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Node.js/Express HTTP service** - I did not complete this part of the deliverable.
-- [ ] **Static middleware for frontend** - I did not complete this part of the deliverable.
-- [ ] **Calls to third party endpoints** - I did not complete this part of the deliverable.
+- [x] **Node.js/Express HTTP service** -   I created a `service` directory and implemented a Node.js Express backend that listens on port 4000. The backend currently responds to `/api/hello` and is configured to expand in later stages
+
+![Console showing the connection](docs/For%20Documentation/node-express.png)
+
+- [x] **Static middleware for frontend** - I added `express.static('public')` so the backend is capable of serving the frontend after deployment.
+- [x] **Calls to third party endpoints** - The app calls the PokéAPI to fetch live Pokémon data and displays it. This was done way before though
 - [ ] **Backend service endpoints** - I did not complete this part of the deliverable.
-- [ ] **Frontend calls service endpoints** - I did not complete this part of the deliverable.
+- [x] **Frontend calls service endpoints** -  Verified that the frontend communicates with the backend using `/api/hello` via Vite proxy. Added image to prove this.
 - [ ] **Supports registration, login, logout, and restricted endpoint** - I did not complete this part of the deliverable.
 
 

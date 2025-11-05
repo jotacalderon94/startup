@@ -2,6 +2,7 @@
 import React, {useState} from 'react'
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom'
 import { PokemonProvider } from './context/PokemonContext.jsx'
+import { AuthState } from './components/auth/authState.js'
 
 // Stub pages for routing
 import Home from './pages/Home.jsx'
@@ -19,6 +20,14 @@ export default function App() {
     'Exercise for 30 minutes',
     'Read a book for 1 hour',
   ]);
+
+  const [authState, setAuthState] = useState(AuthState.Unknown);
+  const [userEmail, setUserEmail] = useState('');
+
+  function handleAuthChange(email, state) {
+    setUserEmail(email);
+    setAuthState(state);
+  }
 
   return (
   <PokemonProvider>
@@ -42,7 +51,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/data" element={<Data tasks={tasks} setTasks={setTasks} />} />
           <Route path="/realtime" element={<Realtime />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login userEmail={userEmail} authState={authState} onAuthChange={handleAuthChange} /> } />
           <Route path="*" element={<main><h2>404 – Page not found</h2></main>} />
         </Routes>
 
