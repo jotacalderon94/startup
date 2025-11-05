@@ -123,7 +123,7 @@ Remember to add the import React on every other component other way it won't ren
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
 - [x] **All functionality implemented or mocked out** - This was done within the previous assignment where I added functionality to all the pages in my nav, I dont know if something else is required or this is what the rubric specifies. 
-- [x] **Hooks** - I did add UseState on home.jsx when fetching pokemons from the api, and useEffect and UseState on Data.jsx to keep track of the task manager part. This is rough still but will have more functionality after the next weeks. 
+- [x] **Hooks** - I did add UseState on home.jsx when fetching pokemons from the api, and useEffect and UseState on Data.jsx to keep track of the task manager part. This is rough still but will have more functionality after the next weeks. Now I added some changes to this I am just using useState and useContext. 
 ## 🚀 Service deliverable
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.

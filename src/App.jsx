@@ -1,8 +1,9 @@
 
 import React, {useState} from 'react'
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom'
+import { PokemonProvider } from './context/PokemonContext.jsx'
 
-// Stub pages (you can fill them later)
+// Stub pages for routing
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Login from './pages/Login.jsx'
@@ -20,6 +21,7 @@ export default function App() {
   ]);
 
   return (
+  <PokemonProvider>
     <Router>
       <div className="app-container">
         {/* Header */}
@@ -50,5 +52,6 @@ export default function App() {
         </footer>
       </div>
     </Router>
+  </PokemonProvider>
   )
 }
