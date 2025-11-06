@@ -135,7 +135,7 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 - [x] **Static middleware for frontend** - I added `express.static('public')` so the backend is capable of serving the frontend after deployment.
 - [x] **Calls to third party endpoints** - The app calls the PokéAPI to fetch live Pokémon data and displays it. This was done way before though
 - [x] **Backend service endpoints** - I added several endppoints for authentication/login. Refer to service/index
-- [x] **Frontend calls service endpoints** -  Verified that the frontend communicates with the backend using `/api/hello` via Vite proxy. Added image to prove this.
+- [x] **Frontend calls service endpoints** -  Verified that the frontend communicates with the backend using `/api/hello` via Vite proxy. Added image to prove this. But you can also check it with the login images. 
 - [x] **Supports registration, login, logout, and restricted endpoint** - Implemented cookie-based session authentication using: bcryptjs for secure password hashing. uuid session tokens. Browser-stored HTTP-only cookies for session persistence Auth state is managed in React using lifted state in App.jsx, and the UI switches between Authenticated and Unauthenticated views based on session status
 
 ![Fail connecting](docs/For%20Documentation/failure_login.png)
