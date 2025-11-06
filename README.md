@@ -128,16 +128,21 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [x] **Node.js/Express HTTP service** -   I created a `service` directory and implemented a Node.js Express backend that listens on port 4000. The backend currently responds to `/api/hello` and is configured to expand in later stages
+- [x] **Node.js/Express HTTP service** -   I created a `service` directory and implemented a Node.js Express backend that listens on port 4000. TThe backend is started separately from the frontend and is configured to expand with more endpoints later. I tested with the responds to /api/hello and it works this can be checked in the imagen under this text.
 
 ![Console showing the connection](docs/For%20Documentation/node-express.png)
 
 - [x] **Static middleware for frontend** - I added `express.static('public')` so the backend is capable of serving the frontend after deployment.
 - [x] **Calls to third party endpoints** - The app calls the PokéAPI to fetch live Pokémon data and displays it. This was done way before though
-- [ ] **Backend service endpoints** - I did not complete this part of the deliverable.
+- [x] **Backend service endpoints** - I added several endppoints for authentication/login. Refer to service/index
 - [x] **Frontend calls service endpoints** -  Verified that the frontend communicates with the backend using `/api/hello` via Vite proxy. Added image to prove this.
-- [ ] **Supports registration, login, logout, and restricted endpoint** - I did not complete this part of the deliverable.
+- [x] **Supports registration, login, logout, and restricted endpoint** - Implemented cookie-based session authentication using: bcryptjs for secure password hashing. uuid session tokens. Browser-stored HTTP-only cookies for session persistence Auth state is managed in React using lifted state in App.jsx, and the UI switches between Authenticated and Unauthenticated views based on session status
 
+![Fail connecting](docs/For%20Documentation/failure_login.png)
+
+![Creating a new user](docs/For%20Documentation/valid_test.png)
+
+![Correct login](docs/For%20Documentation/welcome.png)
 
 ## 🚀 DB deliverable
 
