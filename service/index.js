@@ -8,6 +8,25 @@ const port = process.argv.length > 2 ? process.argv[2] : 4000;
 
 const authCookieName = 'token';
 
+const { MongoClient } = require('mongodb');
+const config = require('./dbConfig.json');
+const DB = require ('./database.js')
+
+// Simon-style connection string using separate keys
+const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostname}`;
+const client = new MongoClient(url);
+
+
+(async function testConnection() {
+  try {
+    await db.command({ ping: 1 });
+    console.log('Connected to MongoDB');
+  } catch (err) {
+    console.error('Failed to connect:', err.message);
+    process.exit(1);
+  }
+})();
+
 // Temporary in-memory users (replaced with DB later)
 let users = [];
 
