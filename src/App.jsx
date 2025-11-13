@@ -10,6 +10,7 @@ import About from './pages/About.jsx'
 import Login from './pages/Login.jsx'
 import Data from './pages/Data.jsx'
 import Realtime from './pages/Realtime.jsx'
+import ProtectedRoute from './components/auth/ProtectedRoute.jsx'
 
 import './styles/global.css'
 
@@ -37,21 +38,34 @@ export default function App() {
         <header>
           <h1>HabitBuddy Startup App</h1>
           <nav>
-            <NavLink to="/" className="nav-link">Home</NavLink>
-            <NavLink to="/about" className="nav-link">About</NavLink>
-            <NavLink to="/data" className="nav-link">Tasks</NavLink>
-            <NavLink to="/realtime" className="nav-link">Friends</NavLink>
-            <NavLink to="/login" className="nav-link">Login / Register</NavLink>
-          </nav>
+  <NavLink to="/" className="nav-link">Home</NavLink>
+  <NavLink to="/about" className="nav-link">About</NavLink>
+
+  {authState === AuthState.Authenticated && (
+    <>
+      <NavLink to="/data" className="nav-link">Tasks</NavLink>
+      <NavLink to="/realtime" className="nav-link">Friends</NavLink>
+    </>
+  )}
+
+  <NavLink to="/login" className="nav-link">
+    {authState === AuthState.Authenticated ? "Logout" : "Login / Register"}
+  </NavLink>
+</nav>
         </header>
 
         {/* Main routed content */}
         <Routes>
           <Route path="/" element={<Home tasks={tasks} />} />
           <Route path="/about" element={<About />} />
-          <Route path="/data" element={<Data tasks={tasks} setTasks={setTasks} />} />
-          <Route path="/realtime" element={<Realtime />} />
+          <Route path="/data"  element={<ProtectedRoute authState={authState}>
+            <Data tasks={tasks} setTasks={setTasks} />
+           </ProtectedRoute> } />
+          <Route path="/realtime" element={<ProtectedRoute authState={authState}>
+            <Realtime />
+            </ProtectedRoute>} />
           <Route path="/login" element={<Login userEmail={userEmail} authState={authState} onAuthChange={handleAuthChange} /> } />
+
           <Route path="*" element={<main><h2>404 – Page not found</h2></main>} />
         </Routes>
 
