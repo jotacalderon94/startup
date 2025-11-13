@@ -6,7 +6,7 @@ const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostna
 const client = new MongoClient(url);
 const db = client.db('habitbuddy'); // 💡 Tu base real
 const usersCollection = db.collection('users');
-const tasksCollection = db.collection('tasks');
+const taskCollection = db.collection('task');
 const pokemonCollection = db.collection('pokemon');
 
 // Test connection
@@ -20,7 +20,7 @@ const pokemonCollection = db.collection('pokemon');
   }
 })();
 
-// Basic operations
+// Login-user related DB functions
 function getUser(email) {
   return usersCollection.findOne({ email });
 }
@@ -36,15 +36,34 @@ async function addUser(user) {
 async function updateUser(user) {
   await usersCollection.updateOne({ email: user.email }, { $set: user });
 }
+// Task-related DB functions
 
 async function addTask(task) {
-  await tasksCollection.insertOne(task);
+  await taskCollection.insertOne(task);
 }
 
-async function getTasksByUser(userEmail) {
-  return tasksCollection.find({ userEmail }).toArray();
+async function getTasksByUser(email) {
+  const cursor = taskCollection.find({ userEmail: email });
+  return cursor.toArray();
 }
 
+async function updateTask(task) {
+  await taskCollection.updateOne(
+    { userEmail: task.userEmail, description: task.description },
+    { $set: task }
+  );
+}
+
+async function updateTaskCompletion(email, description) {
+  await taskCollection.updateOne(
+    { userEmail: email, description },
+    { $set: { isCompleted: true } }
+  );
+}
+async function deleteTask(description, email) {
+  await taskCollection.deleteOne({ description: description, userEmail: email });
+}
+// Pokémon-related DB functions
 async function addPokemon(pokemon) {
   await pokemonCollection.insertOne(pokemon);
 }
@@ -60,6 +79,9 @@ module.exports = {
   updateUser,
   addTask,
   getTasksByUser,
+  updateTask,
+  updateTaskCompletion,
+  deleteTask,
   addPokemon,
   getUserPokemon,
 };
